@@ -18,6 +18,8 @@ Citizen.CreateThread(function()
 
         if(IsPedArmed(playerPed, 4)) then _, ammo = GetAmmoInClip(playerPed, WeapHash) end
         local istalking = NetworkIsPlayerTalking(PlayerId())
+        DisplayHud(false)
+        DisplayRadar(false)
         SendNUIMessage({
             action = "update",
             health = ratio,

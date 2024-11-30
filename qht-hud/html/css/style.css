@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: none;
+	box-sizing: border-box;
+	/* background-color: black; */
+}
+
+main {
+	width: 23%;
+	height: 12vh;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+main .container {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.profileimg {
+	width: 34px;
+	height: 32px;
+	position: absolute;
+	top: 8.6vh;
+    left: -5vh;
+	border-radius: 100%;
+	/* background-image: url(./3.gif); */
+  }
+.gun {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 4px;
+	position: relative;
+}
+
+.ammo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -90%;
+	z-index: -1;
+	opacity: 0.5;
+	color: #fff;
+	font-size: 96px;
+	font-weight: 800;
+}
+
+.ammo svg {
+	color: #fff;
+	font-size: 96px;
+	font-weight: 300;
+}
+
+.gun img {
+	max-height: 80%;
+}
+
+.layer-1 {
+	width: 100%;
+	height: 28%;
+	margin-bottom: 4px;
+}
+
+.layer-2 {
+	width: 100%;
+	height: 10%;
+}
+
+.layer-3 {
+	position: absolute;
+	width: 69%;
+	height: 10%;
+	top: 9vh;
+}
+
+.mic {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 6vh;
+    left: 3vh;
+    background-color: #1a1a1a;
+    border-radius: 100%;
+    align-items: center;
+	/* color: #cccccce4; */
+
+}
+
+.mic>i {
+    /* font-size: 16px; */
+    font-size: 14px;
+    position: absolute;
+    top: 0.4vh;
+    left: 0.2vh;
+} 
+
+.layer-1 .wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.layer-1 .wrapper img {
+	height: 130%;
+}
+
+.hp {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	font-size: 16px;
+	line-height: 14px;
+	font-weight: 700;
+	bottom: 1%;
+}
+
+.layer-2 .wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 2px;
+}
+
+.layer-2 .wrapper .hp {
+	left: 0;
+	top: 0;
+	position: absolute;
+	width: 20%;
+	height: calc(100% - 8px);
+	/* border-radius: 15px; */
+	background-color: rgb(36, 133, 42);
+	z-index: 999;
+	margin-top: 2px;
+	/* box-shadow: 0 0 10px 5px rgba(250, 70, 71, 0.2); */
+	transition: width 0.2s;
+	border-top-right-radius: 18px;
+}
+
+.layer-3 .wrapper {
+	width: calc(100%);
+	height: calc(100% - 8px);
+	z-index: 999;
+	margin-top: 2px;
+	display: flex;
+}
+
+.layer-3 .wrapper .step {
+	width: 12.5%;
+	height: 100%;
+	border-radius: 2px;
+	margin-right: 3px;
+	background-color: rgb(180, 180, 180, 0.2);
+	transition: background-color 0.1s;
+}
+
+.layer-3 .wrapper .step:last-child {
+	margin: 0;
+}
+
+.step {
+	position: relative;
+}
+
+.step::after {
+	content: "";
+	height: 100%;
+	z-index: 999;
+	position: absolute;
+	width: var(--width, 0);
+	background-color: rgb(38, 112, 224) !important;
+	border-radius: 2px;
+}
